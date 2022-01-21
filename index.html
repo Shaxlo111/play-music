@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+<div class="navbar">
+    <img src="image/logo.png " id=""/>
+    <ul><li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Specifications</a></li>
+    <li><a href="#">Product</a></li>
+    <li><a href="#">Connect</a></li>
+    </ul>
+</div>
+    <div class="content">
+        <div class="left-col">
+        <h1>The <br> Real <br> Song</h1>
+        </div>
+        <div class="right-col">
+            <p>Click Hero To Listen</p>
+            <img src="image/pngaaa.com-180388.png" id="icon"/>
+        </div>
+</div>
+</div>
+<audio id="mySong">
+    <source src="image/Anivar%20-%20Любимый%20Человек.mp3" type="audio/mp3">
+</audio>
+</body>
+<script>
+    var mySong=document.getElementById("mySong");
+    var icon=document.getElementById("icon");
+    icon.onclick=function() {
+        if (mySong.paused){
+            mySong.play();
+            icon.src="image/pngaaa.com-180444.png"
+        }else {
+            mySong.pause();
+            icon.src="image/pngaaa.com-180388.png"
+        }
+    }
+</script>
+</html>
